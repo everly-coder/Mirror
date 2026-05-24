@@ -106,7 +106,8 @@ export default function Landing() {
     { n: '03', title: t.s3t, desc: t.s3d },
   ];
 
-  const B = (props) => (
+  // eslint-disable-next-line no-unused-vars
+const B = (props) => (
     <button {...props} style={{...props.style, cursor:'pointer'}}
       onMouseEnter={e => { Object.assign(e.currentTarget.style, props['data-hover'] || {}); }}
       onMouseLeave={e => { Object.assign(e.currentTarget.style, props['data-leave'] || {}); }}
